@@ -1,0 +1,42 @@
+<apex:page controller="TVM_InputFormController">
+     <apex:form >
+        <apex:pageBlock title="Cash Flow Input Form">
+        <apex:pageBlockSection columns="1" collapsible="true">
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Cash Flow Year 1: </apex:outputLabel>   
+        <apex:inputText label="Cash Flow Year 1" title="Cash Flow Year 1" value="{!amtYear1}"/>
+        </apex:pageBlockSectionItem>
+            
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Cash Flow Year 2: </apex:outputLabel>   
+        <apex:inputText label="Cash Flow Year 2" title="Cash Flow Year 2" value="{!amtYear2}"/>
+        </apex:pageBlockSectionItem>
+            
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Cash Flow Year 3: </apex:outputLabel>   
+        <apex:inputText label="Cash Flow Year 3" title="Cash Flow Year 3" value="{!amtYear3}"/>
+        </apex:pageBlockSectionItem>
+            
+            
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Cash Flow Year 4: </apex:outputLabel>   
+        <apex:inputText label="Cash Flow Year 4" title="Cash Flow Year 4" value="{!amtYear4}"/>
+        </apex:pageBlockSectionItem>
+            
+            
+        <apex:pageBlockSectionItem >
+        <apex:outputLabel >Cash Flow Year 5: </apex:outputLabel>   
+        <apex:inputText label="Cash Flow Year 5" title="Cash Flow Year 5" value="{!amtYear5}"/>
+        </apex:pageBlockSectionItem>
+            
+            
+        </apex:pageBlockSection>
+          <apex:commandButton title="Submit" action="{!submit}" value="Calculate TVM" id="calculateTVM"/> 
+            
+        </apex:pageBlock>
+         
+         <apex:outputPanel > The Present Value of the Investment is : {!amtYear1}</apex:outputPanel>
+    </apex:form>
+    
+   
+</apex:page>
